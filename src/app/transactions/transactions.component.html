@@ -1,0 +1,30 @@
+<div class="trans-div">
+    <h1>Transactions</h1>
+    <h4>Balance: </h4>
+    <h2 [style.color]="sum<0? 'darkred' : 'darkgreen'">${{sum.toFixed(2)}}</h2> 
+    
+    <div class="top-div">
+        <a routerLink="/add"> + New Entry</a>
+
+    </div>
+    <div class="trans-box-div">
+
+        <div class="chargeTitle-div" *ngFor="let transaction of transactions">
+            <div class="left-div">
+                <p>{{transaction.chargeTitle}}</p>
+                <span>{{transaction.status}}</span>
+            </div>
+            <div class="right-div">
+                <div class="rl-div">
+                    <p [style.color]="transaction.amount<0? 'darkred' : 'darkgreen'">${{transaction.amount | number:'1.2-2' }}</p> 
+                    <span> ({{transaction.chargeDate}}) </span>
+                </div>
+                <div class="rr-div">
+                    <a [routerLink]="['/transactions', transaction.id]"> VIEW </a> 
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

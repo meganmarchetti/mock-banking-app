@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: rgb(0, 66, 0);
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+
+.add-info a {
+  cursor: pointer;
+  color: rgb(0, 66, 0);
+  background-color: rgb(187, 187, 187);
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 35px;
+}
+
+.add-info {
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  outline: rgb(0, 66, 0) solid 1px;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-in {
+  padding: 5px;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 25px;
+}

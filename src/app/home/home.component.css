@@ -1,0 +1,50 @@
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w-div {
+  background-color: #fff;
+  width: 65%;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 66, 0);
+}
+
+.acc-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: rgb(236, 236, 236) solid 2px;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(0, 66, 0);
+}
+
+span {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}

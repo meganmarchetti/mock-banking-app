@@ -1,0 +1,38 @@
+<br>
+<a routerLink="/transactions"><- Back to Transactions</a>
+<div class="add-info">
+    <h3>Add Entry</h3>
+    <div class="add-in">
+        <label for="chargeTitle">Charge Title: </label>
+        <input [(ngModel)]="newtrans.chargeTitle">
+    </div>
+    <div class="add-in">
+        <label for="amount">Charge Amount: </label>
+        <input [(ngModel)]="newtrans.amount" type="number">
+    </div>
+    <div class="add-in">
+        <label for="chargeDate">Charge Date: </label>
+        <input [(ngModel)]="newtrans.chargeDate">
+    </div>
+    <div class="add-in">
+        <label for="description">Description: </label>
+        <input [(ngModel)]="newtrans.description">
+    </div>
+    <div class="add-in">
+        <label for="category">Category: </label>
+        <input [(ngModel)]="newtrans.category">
+    </div>
+    <div class="add-in">
+        <label for="status">Status: </label>
+        <input [(ngModel)]="newtrans.status">
+    </div>
+    <div class="add-in">
+        <label for="chargeType">Charge Type: </label>
+        <select [(ngModel)]="newtrans.chargeType"> 
+            <option value="deposit">deposit</option>
+            <option value="withdrawal">withdrawal</option>
+        </select>
+    </div> 
+    
+    <a (click)="addTrans(newtrans)">ADD</a>
+</div>

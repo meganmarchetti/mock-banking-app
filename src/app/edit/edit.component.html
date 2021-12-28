@@ -1,0 +1,32 @@
+<br>
+<a routerLink="/transactions/{{transaction.id}}"><- Back to Entry</a>
+<div class="edit-info">
+    <h3>Edit Entry</h3>
+    <div class="edit-in">
+        <label for="chargeTitle">Charge Title: </label>
+        <input [(ngModel)]="transaction.chargeTitle">
+    </div>
+    <div class="edit-in">
+        <span>${{transaction.amount | number:'1.2-2'}}</span>
+    </div>
+    <div class="edit-in">
+        <span>{{transaction.chargeDate}}</span>
+    </div>
+    <div class="edit-in">
+        <label for="description">Description: </label>
+        <input [(ngModel)]="transaction.description">
+    </div>
+    <div class="edit-in">
+        <label for="category">Category: </label>
+        <input [(ngModel)]="transaction.category">
+    </div>
+    <div class="edit-in">
+        <span>{{transaction.status}}</span>
+    </div>
+    <div class="edit-in">
+        <span>{{transaction.chargeType}}</span>
+    </div>
+    
+    <a (click)="patchTrans()">UPDATE</a>
+
+</div>

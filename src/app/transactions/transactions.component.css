@@ -1,0 +1,111 @@
+.chargeTitle-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  border-bottom: rgb(236, 236, 236) solid 3px;
+  width: 1000px;
+}
+
+.chargeTitle-div a {
+  text-decoration: none;
+  color: rgb(0, 66, 0);
+  background-color: rgb(226, 226, 226);
+  font-size: 15px;
+  padding: 7px 10px;
+  padding-top: 9px;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.chargeTitle-div a:hover {
+  font-weight: bolder;
+}
+
+.chargeTitle-div:last-child {
+  border-bottom: 0;
+}
+
+.chargeTitle-div p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.chargeTitle-div span {
+  font-size: 15px;
+  font-style: italic;
+  margin: 5px;
+}
+
+h1 {
+  margin: 20px 10px;
+  font-size: 40px;
+}
+
+.trans-div {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.rr-div,
+.rl-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.rr-div {
+  margin-right: 0;
+}
+
+.right-div {
+  display: flex;
+}
+
+.trans-box-div {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-div {
+  display: flex;
+  width: 68%;
+  justify-content: right;
+  padding: 5px;
+  margin: 5px;
+}
+
+.top-div a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 66, 0);
+  font-weight: 500;
+}
+
+.top-div a:hover {
+  font-weight: 600;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: 2px;
+  font-size: 30px;
+}

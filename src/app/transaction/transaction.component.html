@@ -1,0 +1,17 @@
+<br>
+<a routerLink="/transactions"><- Back to Checking</a>
+<div class="trans-info">
+    <h3>{{transaction.chargeTitle}}</h3>
+    <h3>${{transaction.amount | number:'1.2-2'}}</h3>
+    <h4>{{transaction.chargeDate}}</h4>
+    <p>Description: {{transaction.description}}</p>
+    <p>Category: {{transaction.category}}</p>
+    <p>Status: {{transaction.status}}</p>
+    <p>{{transaction.chargeType}}</p>
+    <div class="trans-in">
+
+        <a (click)="editTrans()">EDIT</a>
+        <a (click)="deleteTrans()">DELETE</a>
+    </div>
+</div>
+
